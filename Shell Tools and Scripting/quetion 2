@@ -1,0 +1,11 @@
+
+#!/bin/bash
+
+macro(){
+        echo "$(pwd)" > $HOME/Desktop/pwd.txt
+        echo "save pwd $(pwd)"
+}
+
+polo(){
+        cd "$(cat "$HOME/Desktop/pwd.txt")"
+}
